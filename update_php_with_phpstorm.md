@@ -1,5 +1,5 @@
 # How to update your PHP codebase without breaking the website?
-PHP code update to a newer version may be a real challenge. It doesn't only require time but can also lead to website breakdowns in case the code review wasn't done accordingly. Never update the PHP codebases to a  newer PHP version then? Of course not.
+PHP code update to a newer version may be a real challenge. It doesn't only require time but can also lead to website breakdowns in case the code review wasn't done accordingly. Never update the PHP codebases to a  newer PHP version then? Of course, not.
 
 In this blog post we talk about why you need to regularly upgrade your PHP version and how to make it in a smooth and safe way with the recently released [PhpStorm 2022.2](https://blog.jetbrains.com/phpstorm/2022/08/phpstorm-2022-2-is-now-available/?utm_source=blog.jetbrains.com&utm_medium=content&utm_campaign=php-update#Rector_support).
 
@@ -11,7 +11,7 @@ In this blog post we talk about why you need to regularly upgrade your PHP versi
 - [How to update my PHP version with PhpStorm?](#how-to-update)
 
 ## Why to update the PHP codebase?<a name="why-to-update"></a>
-If everything works, why to update? That’s a rational question, however there are at the least three important reasons to decide on the migration:
+If everything works, why to update? That’s a rational question, however there are at least three important reasons to decide on the migration:
 * **Better security**. Newer versions are better at countering hackers, for example, because outdated code is no longer supported. 
 * **Faster websites**. Newer PHP versions are with faster execution times and less memory usage.
 * **New features and improvements**. As with all updates, a newer version includes new features and improvements on how to do things, for example, preloading. To know more about each PHP version, look through [PHP changelogs](https://www.php.net/manual/en/doc.changelog.php). 
@@ -37,7 +37,7 @@ Curious to know how to execute it? Let’s see:
 
 2.	Next, you should create a new run configuration specifically for Rector. PhpStorm can do this automatically for you – simply right-click the folder you want Rector to fix and then select **Run | Rector**:
 ![New_run_configuration_for_Rector](img/how-to-update_1.gif "New_run_configuration")
-3. When Rector is done scanning, PhpStorm will give you **a list of files that it wants to change**. You can then review changes in PhpStorm, select individual files and folders, and finally apply all of the selected changes.  
+3. When Rector is done scanning, PhpStorm will give you **a list of files that it wants to change**. You can then review changes in PhpStorm, select individual files and folders, and finally apply all the selected changes.  
 
 
 4. Since Rector is a run configuration, you have the option to configure it, as well. Either go to **Run | Edit Configurations** or choose **Edit Configurations** from the *Actions menu*:
