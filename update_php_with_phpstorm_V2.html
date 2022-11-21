@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>How to update your PHP codebase without breaking the website?</title>
+</head>
+<body>
+<h1>How to update your PHP codebase without breaking the website?</h1>
+<p>PHP code update to a newer version may be a real challenge. It doesn't only require time but can also lead to website
+    breakdowns in case the code review wasn't done accordingly. Never update the PHP codebases to a newer PHP version
+    then? Of course, not.</p>
+<p>In this blog post we talk about why you need to regularly upgrade your PHP version and how to make it in a smooth and
+    safe way with the recently released <a
+            href="https://blog.jetbrains.com/phpstorm/2022/08/phpstorm-2022-2-is-now-available/?utm_source=blog.jetbrains.com&utm_medium=content&utm_campaign=php-update#Rector_support">PhpStorm
+        2022.2</a>.</p>
+<h4>Table of Contents</h4>
+<ul>
+    <li><a href="#why-to-update">Why to update the PHP codebase?</a></li>
+    <li><a href="#which-to-choose">Which PHP version to choose?</a>
+        <ul>
+            <li><a href="#any-pitfalls">Any pitfalls?</a></li>
+        </ul>
+    </li>
+    <li><a href="#how-phpstorm-helps">How PhpStorm helps to upgrade your website PHP version?</a></li>
+</ul>
+<h2 id="why-to-update">Why to update the PHP codebase?</h2>
+<p>If everything works, why to update? That’s a rational question, however there are at least three important reasons to
+    decide on the migration:</p>
+<ul>
+    <li><b>Better security</b>. Newer versions are better at countering hackers, for example, because outdated code is
+        no longer supported.
+    </li>
+    <li><b>Faster websites</b>. Newer PHP versions are with faster execution times and less memory usage.</li>
+    <li><b>New features and improvements</b>. As with all updates, a newer version includes new features and
+        improvements on how to do things, for example, preloading. To know more about each PHP version, look through <a
+                href="https://www.php.net/manual/en/doc.changelog.php">PHP changelogs</a>.
+    </li>
+</ul>
+<h2 id="which-to-choose">Which PHP version to choose?</h2>
+<p>Obviously, the latest one. Not only because it has the best productivity, security level and the newest features but
+    also because of <b>the longest supporting lifecycle</b>.</p>
+<p>All PHP versions have a lifecycle of about three years, after which they are no longer supported. After the initial
+    release, a PHP version is actively supported for approximately two years. After that time, there will be 1-2 years
+    of security support, meaning that there are only releases for critical security issues. During this phase, the next
+    PHP version is already available.
+    When a PHP version reaches end-of-life, it does not get updated anymore, so after that time it's no longer secure to
+    use it. Check out <a href="https://www.php.net/supported-versions.php">here</a> to see which versions are currently
+    supported.</p>
+<p>Tip: to know your current PHP website version, take a look at the bottom of PhpStorm. If your version is no more
+    supported, it’s definitely time to act.</p>
+<img src="img/php_version.png" alt="Your PHP version in PhpStorm">
+<h3 id="any-pitfalls">Any pitfalls?</h3>
+<p>Not each new PHP version supports the code of the previous versions. In order not to break down your website after
+    migration from one PHP version to another, it is recommended to check the legacy code and to amend if it is not supported by the new PHP version anymore.</p>
+<h2 id="how-phpstorm-helps">How PhpStorm helps to upgrade your website PHP version?</h2>
+<p><strong>Manual</strong> legacy code check-up of your whole code may be a heavy task: you need to make sure that every piece of code is up and running after upgrade. Needless to say, you need to consider backing up your website beforehand.</p>
+<p>But since <a href="https://getrector.org/">Rector</a> is integrated into <a
+        href="https://blog.jetbrains.com/phpstorm/2022/08/phpstorm-2022-2-is-now-available/#Rector_support?utm_source=blog.jetbrains.com&utm_medium=content&utm_campaign=php-update#Rector_support">PhpStorm
+    2022.2</a>, this process became much easier and safer. Now developpers are able to <b>automatically update old PHP code</b>
+    and <b>review all changes before applying them</b>. PhpStorm detects all legacy code and lets them decide what to do
+    next.</p>
+<p><strong>Concentrate your team’s efforts on the essential business tasks</strong></p>
+<p>When updating PHP version <strong>manually</strong>, developer needs about 1 month for detecting the legacy code. This time is varied depending on your website complexity and may even extend <strong>up to 3 months</strong>. With PhpStorm’s Rector support this process is automatized so your team sees all the changes in the PhpStorm interface.</p>
+<p>Based on our research among 1000 companies, using PhpStorm to upgrade the PHP version helped them <strong>to free up 40 hours of developers’ time yearly</strong>.</p>
+<p><strong>Keeping your website in workable condition is the first priority</strong></p>
+<p>Nowadays the company’s website plays the crucial role in achieving business goals. Ongoing support of the website in good working condition is the one of the highest priorities for any web department. If something fundamental breaks down on the website, you most likely will be notified about and be able to fix immediately. But if the breakdown is not detected promptly? It may cause not only the customer dissatisfaction or loss of trust but also loss of revenues.</p>
+<p>While upgrading the PHP version manually, some of the legacy code may not be noticed that leads to errors while website users’ usage. Imagine if it is about online payment procedure, purchasing scenarios or any other business sensitive topics – these elements must run like clockwork day and night! 
+<p>PhpStorm detects legacy code automatically, and probability of error is minimized. Business functions of your website are secure.</p>
+
+<p>Ready to update the PHP version with PhpStorm? See the detailed instruction in our <a href="https://blog.jetbrains.com/phpstorm/2022/08/phpstorm-2022-2-is-now-available/?utm_source=blog.jetbrains.com&utm_medium=content&utm_campaign=php-update#Rector_support">release digest</a>.</p>
+<hr>
+<p>That’s all for today. Thanks for reading, and we hope you’ll enjoy the upgrade of your PHP site with PhpStorm.</p>
+<ul>
+    <li>
+        <a href="https://www.jetbrains.com/phpstorm/download/?utm_source=blog.jetbrains.com&utm_medium=content&utm_campaign=php-update">Download
+            PhpStorm</a></li>
+    <li><a href="https://twitter.com/phpstorm?utm_source=blog.jetbrains.com&utm_medium=content&utm_campaign=php-update">Tweet
+        us</a></li>
+    <li>Report bugs to our <a
+            href="https://youtrack.jetbrains.com/issues/WI?utm_source=blog.jetbrains.com&utm_medium=content&utm_campaign=php-update">issue
+        tracker</a></li>
+</ul>
+<p><i>Your JetBrains PhpStorm team<br>
+    The Drive to Develop</i></p>
+</body>
+</html>
